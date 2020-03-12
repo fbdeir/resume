@@ -1,0 +1,165 @@
+% list of fontawesome icons available here: http://ftp.cc.uoc.gr/mirrors/CTAN/fonts/fontawesome/doc/fontawesome.pdf
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.3, 30 April 2017) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{arabtex}
+\usepackage{soul}
+\usepackage{hyperref}
+\usepackage{qrcode}
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=VividPurple,
+}
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+\begin{document}
+\name{Fatima Carolina Bdeir}
+\tagline{BSc Computer Science, AUB, Dec 2018. Minor in Creative Writing}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{fatima.c.bdeir@gmail.com}
+  \phone{+961 (71) 559-949}
+  \mailaddress{Beirut, LEBANON}
+  \linkedin{linkedin.com/in/fbdeir}
+  \github{github.com/fbdeir} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+\cvevent{Junior Software Engineer}{Monty Mobile}{May 2019 - Present}{Beirut, Lebanon}
+\begin{itemize}
+    \item Unit and integration tests using Junit 4 and 5, as well as containerized tests.
+    \item Created an API server to perform business and database logic with OAuth2.0.
+    \item Developed a library to send and receive SMS messages using Cloudhopper (SMPP) and Spring.
+    \item Developed a library to en-queue and de-queue messages to and from RabbitMq using Spring Boot.
+    \item Developed a library to create RestTemplate beans to allow easier and cleaner API calls in other projects.
+    \item Developed a git pre-commit hook to enforce a common codestyle.
+    \item Applied continuous integration by testing, packaging, and staging merged projects on the pipeline to servers.
+    \item Software documentation and ER diagrams to propose a database structure for reverse engineered code.\\
+\cvtagpurple{Java} \cvtagpurple{Spring Boot} \cvtagpurple{Linux Commands} \cvtagpurple{Linux servers} \cvtagpurple{systemctl} \cvtagpurple{SMPP} \cvtagpurple{Maven} \cvtagpurple{PostgreSQL} \cvtagpurple{MySQL} \cvtagpurple{Rest APIs} \cvtagpurple{Checkstyle} \cvtagpurple{Junit} \cvtagpurple{Docker/Containerized Tests} \cvtagpurple{Git} \cvtagpurple{MyBatis} \cvtagpurple{Bitbucket} \cvtagpurple{Gitlab} \cvtagpurple{RabbitMq}
+
+
+\divider
+
+   
+    
+\end{itemize}
+\cvevent{Internship - Artificial Intelligence Developer}{Murex}{July 2018}{Beirut, LEBANON}
+\begin{itemize}
+\item Member of a team that developed chatbot applications using various artificial intelligence technologies and software architectures.\\
+\cvtagpurple{C\#}
+\cvtagpurple{xUnit}
+\cvtagpurple{Microsoft Bot Framework}
+\cvtagpurple{LUIS}
+\cvtagpurple{DialogFlow}
+
+\end{itemize}
+
+\divider
+
+\cvevent{Internship - Artificial Intelligence Developer}{CardioDiagnostics}{June 2018}{Beirut, LEBANON}
+\begin{itemize}
+\item Research different methods to automate electrocardiogram  (ECG) classification using machine learning and feature extraction, then training of a neural network to classify different cardiac arrhythmias.\\
+\cvtagpurple{AzureML}
+\cvtagpurple{Python}
+\cvtagpurple{Azure virtual machines}
+\cvtagpurple{Keras}
+\cvtagpurple{Tensorflow}
+\end{itemize}
+
+\cvsection{Projects}
+\cvachievement{\qrcode[height=0.25in]{https://goo.gl/jQLUm2}
+\qquad}{ASKI}{An Amazon Alexa skill to query AUB course offering.}
+
+\begin{itemize}
+    \item Stored course data in NoSQL DynamoDB on AWS cloud, then wrote AWS Lambda functions written in Javascript using Nodejs\\
+    \cvtagpurple{AWS Lambda} 
+\cvtagpurple{Alexa Skills Kit} 
+\cvtagpurple{AWS DynamoDb}
+\end{itemize}
+\divider
+
+\cvachievement{\faHeartbeat}{TBear}{A mobile application for reporting Tuberculosis Bumps.}
+\begin{itemize}
+    \item Done with the supervision of the head of family medicine at AUBMC Dr. Ghassan Hamadeh.
+    \item Created Lambda functions on AWS in Python accessed through the Amazon API Gateway.
+    \item Took part in the image processing development using the OpenCV library.\\
+    \cvtagpurple{OpenCV}
+\cvtagpurple{AWS EC2} 
+\cvtagpurple{Javascript}
+\cvtagpurple{Python}
+
+\end{itemize}
+
+\end{document}
